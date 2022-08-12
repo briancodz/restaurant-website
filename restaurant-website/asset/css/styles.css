@@ -56,18 +56,20 @@ body{
     color: var(--clr-title);
     font-size:50px;
     font-family: 'Oleo Script Swash Caps', cursive;
-    align-items: center;
+    text-align: center;
     
     
 }
 .details{
     
     font-family: 'Pacifico', cursive;
+    text-align: center;
     
 }
 .location {
     margin: 0.5em 0;
     font-style: italic;
+    text-align: center;
 }
 
 .lower-btn{
@@ -85,6 +87,7 @@ body{
     justify-content: space-between;
     font: bolder;
     text-align: center;
+    align-items: center;
 }
 
 .lower-btn:hover {
@@ -96,4 +99,52 @@ body{
     max-width: 5%;
     margin-top: 7em;
     justify-content: space-between;
+}
+
+@media (min-width:800px){
+    body {
+        margin: 1em;
+    }
+
+    .lower-btn{
+        padding: 0.7rem 5rem;
+        background: var(--clr-button);
+        color: var(--clr-white);
+        border-radius: 50px;
+        font-weight: 500;
+        transition: .2s;
+        align-items: center;
+        margin-top: 2em;
+        margin-bottom: 0.5em;
+        margin-left: auto;
+        margin-right: auto;
+        width: 30%;
+        display: block;
+        
+       
+        font: bolder;
+        
+        
+    }
+    
+    .lower-btn:hover {
+        background: var(--clr-title);
+        color: var(--clr-white);
+    }
+
+    .title{
+        color: var(--clr-title);
+        font-size:100px;
+        font-family: 'Oleo Script Swash Caps', cursive;
+        text-align: center;
+        }
+
+    .social-link{
+        max-width: 5%;
+        align-items: center;
+        justify-items: center;
+        
+    }    
+    
+
 }
